@@ -1,0 +1,9 @@
+<main>
+    <div class="container">
+        @if(!footballer() || footballer() == null) {
+            Veuillez choisir un footballeur
+        } @else {
+            {{footballer()|json}}
+        }
+    </div>
+</main>

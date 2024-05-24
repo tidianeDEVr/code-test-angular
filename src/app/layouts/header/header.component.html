@@ -1,0 +1,14 @@
+<header>
+    <div class="container">
+        <img src="../../../assets/google.png" alt="logo" />
+        @if(footballers()) {
+            <select name="footballers" (change)="changeFootballer($event)" [(ngModel)]="selectedFootballer">
+                <option value="null">-- Choisir --</option>
+                @for(footballer of footballers(); track footballer) {
+                    <option value="{{footballer.name}}">{{footballer.name}}</option>
+                }
+            </select>
+        }
+        <img src="../../../assets/google.png" alt="logo" />
+    </div>
+</header>

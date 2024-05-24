@@ -1,0 +1,22 @@
+:host {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 20px 10px;
+        background-color: var(--header-bg);
+        backdrop-filter: blur(5px);
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+}
